@@ -21,11 +21,14 @@
   "scripts": {
     "start": "node index",
     "test": "node test/app",
-    "precommit": "npm test"
+    "precommit": "npm test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "clone": "^1.0.2",
-    "json-server": "^0.12.1"
+    "json-server": "^0.12.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "Faker": "~0.5.11",
@@ -38,5 +41,6 @@
   "engines": {
     "node": "7.x"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
